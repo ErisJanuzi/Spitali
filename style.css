@@ -1,0 +1,244 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #f5f6f7;
+    color: #003B6F;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAVIGATION */
+header {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: #003B6F;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2F89C5;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=1500&q=80')
+        center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.primary {
+    background: #003B6F;
+    color: white;
+}
+
+.primary:hover {
+    background: #2F89C5;
+}
+
+.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary:hover {
+    background: white;
+    color: #003B6F;
+}
+
+/* ABOUT */
+.about {
+    padding: 60px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* DEPARTMENTS */
+.departments {
+    background: white;
+    padding: 60px 0;
+}
+
+.dept-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.dept-item {
+    background: #e8eff5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* DOCTORS */
+.doc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.doc-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* PATIENTS */
+.patients {
+    padding: 60px 0;
+}
+
+.patient-list {
+    margin-top: 20px;
+    list-style: disc;
+    padding-left: 25px;
+}
+
+/* CONTACT */
+.contact {
+    background: white;
+    padding: 60px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cdd7e0;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #003B6F;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .about-grid,
+    .dept-grid,
+    .doc-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 60vh;
+        padding: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+}
+
+/* AUTH BUTTONS */
+.auth-buttons {
+    display: flex;
+    gap: 12px;
+    margin-right: 25px;
+}
+
+.btn-login,
+.btn-signup {
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Login = buton transparent */
+.btn-login {
+    border: 2px solid #003B6F;
+    color: #003B6F;
+}
+
+.btn-login:hover {
+    background: #003B6F;
+    color: white;
+}
+
+/* Signup = buton blu i errët */
+.btn-signup {
+    background: #003B6F;
+    color: white;
+}
+
+.btn-signup:hover {
+    background: #2F89C5;
+}
