@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneli - Spitali Amerikan</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Spitali Amerikan</h2>
+        <button id="logoutBtn">Dil</button>
+    </header>
+
+    <div class="container">
+        <h1>Mirë se erdhe, <span id="username"></span>!</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Pacientët</h3>
+                <p>Shiko ose menaxho pacientët.</p>
+                <a href="#">Hyr</a>
+            </div>
+
+            <div class="card">
+                <h3>Analizat</h3>
+                <p>Rezultatet dhe raportet laboratorike.</p>
+                <a href="#">Hyr</a>
+            </div>
+
+            <div class="card">
+                <h3>Takimet</h3>
+                <p>Orari i vizitave dhe doktorëve.</p>
+                <a href="#">Hyr</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // vendos emrin nga localStorage
+        const user = localStorage.getItem("user");
+
+        if (!user) {
+            window.location.href = "login.html";
+        }
+
+        document.getElementById("username").textContent = user;
+
+        // butoni logout
+        document.getElementById("logoutBtn").addEventListener("click", () => {
+            localStorage.clear();
+            window.location.href = "login.html";
+        });
+    </script>
+
+</body>
+</html>
