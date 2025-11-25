@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spitali Amerikan | Kujdes i Nivelit Europian</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
-
 <body>
 
-    
+    <!-- NAVBAR -->
     <header>
         <div class="container nav-container">
             <h1 class="logo">Spitali Amerikan</h1>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#home">Kryefaqja</a></li>
                     <li><a href="#about">Rreth Nesh</a></li>
                     <li><a href="#departments">Departamentet</a></li>
@@ -22,17 +22,17 @@
                     <li><a href="#patients">Pacientët</a></li>
                     <li><a href="#contact">Kontaktet</a></li>
                 </ul>
+                <div class="auth-buttons">
+                    <a href="#login" class="btn-login">Login</a>
+                    <a href="#signup" class="btn-signup">Signup</a>
+                </div>
             </nav>
         </div>
-        <div class="auth-buttons">
-                <a href="#login" class="btn-login">Login</a>
-                <a href="#signup" class="btn-signup">Signup</a>
-            </div>
     </header>
 
- 
+    <!-- HERO -->
     <section class="hero" id="home">
-        <div class="hero-content">
+        <div class="hero-content fade-up">
             <h2>Kujdes i Nivelit Europian</h2>
             <p>Teknologji moderne, ekspertizë ndërkombëtare dhe përkushtim maksimal për shëndetin tuaj.</p>
             <div class="hero-buttons">
@@ -42,25 +42,25 @@
         </div>
     </section>
 
-    
-    <section class="about" id="about">
+    <!-- ABOUT -->
+    <section class="about fade-up" id="about" data-parallax-speed="0.2">
         <div class="container">
             <h2>Rreth Nesh</h2>
-            <p>
-                Spitali Amerikan është një qendër moderne mjekësore që ofron standarde ndërkombëtare të sigurisë dhe cilësisë.
-                Ekipi ynë i mjekëve dhe infermierëve është i përkushtuar në ofrimin e shërbimit më të mirë për çdo pacient.
-            </p>
+            <p>Spitali Amerikan është një qendër moderne mjekësore që ofron standarde ndërkombëtare të sigurisë dhe cilësisë. Ekipi ynë i mjekëve dhe infermierëve është i përkushtuar në ofrimin e shërbimit më të mirë për çdo pacient.</p>
 
             <div class="about-grid">
-                <div>
+                <div class="card parallax-card">
+                    <i class="fas fa-heartbeat icon"></i>
                     <h3>Misioni</h3>
                     <p>Të ofrojmë kujdes të specializuar dhe të sigurt, duke kombinuar ekspertizën me teknologjinë më të avancuar.</p>
                 </div>
-                <div>
+                <div class="card parallax-card">
+                    <i class="fas fa-eye icon"></i>
                     <h3>Vizioni</h3>
                     <p>Të jemi lider në rajon për inovacion, standarde të larta dhe përkushtim ndaj pacientit.</p>
                 </div>
-                <div>
+                <div class="card parallax-card">
+                    <i class="fas fa-hand-holding-medical icon"></i>
                     <h3>Vlerat</h3>
                     <p>Profesionalizëm, integritet, siguri, respekt dhe përsosmëri në çdo shërbim.</p>
                 </div>
@@ -68,33 +68,33 @@
         </div>
     </section>
 
-
-    <section class="departments" id="departments">
+    <!-- DEPARTMENTS -->
+    <section class="departments fade-up" id="departments" data-parallax-speed="0.1">
         <div class="container">
             <h2>Departamentet & Shërbimet</h2>
-
             <div class="dept-grid">
-                <div class="dept-item">
+                <div class="dept-item card parallax-card" data-hover="Kardiologji">
+                    <i class="fas fa-heart icon"></i>
                     <h3>Kardiologji</h3>
                     <p>Diagnostikim dhe trajtim i sëmundjeve të zemrës me pajisje të nivelit europian.</p>
                 </div>
-
-                <div class="dept-item">
+                <div class="dept-item card parallax-card" data-hover="Onkologji">
+                    <i class="fas fa-ribbon icon"></i>
                     <h3>Onkologji</h3>
                     <p>Trajtim multidisiplinar i sëmundjeve tumorale dhe terapive moderne.</p>
                 </div>
-
-                <div class="dept-item">
+                <div class="dept-item card parallax-card" data-hover="Ortopedi">
+                    <i class="fas fa-bone icon"></i>
                     <h3>Ortopedi</h3>
                     <p>Kirurgji ortopedike, proteza moderne dhe rikuperim i avancuar.</p>
                 </div>
-
-                <div class="dept-item">
+                <div class="dept-item card parallax-card" data-hover="Gjinekologji">
+                    <i class="fas fa-baby icon"></i>
                     <h3>Gjinekologji</h3>
                     <p>Kujdes për nënën dhe fëmijën, monitorim shtatzënie dhe lindje të asistuara.</p>
                 </div>
-
-                <div class="dept-item">
+                <div class="dept-item card parallax-card" data-hover="Urgjenca">
+                    <i class="fas fa-ambulance icon"></i>
                     <h3>Urgjenca</h3>
                     <p>Shërbim emergjence 24/7 me staf të certifikuar dhe laborator të shpejtë.</p>
                 </div>
@@ -102,28 +102,25 @@
         </div>
     </section>
 
-  
-    <section class="doctors" id="doctors">
+    <!-- DOCTORS -->
+    <section class="doctors fade-up" id="doctors" data-parallax-speed="0.15">
         <div class="container">
             <h2>Mjekët Tanë</h2>
-
             <div class="doc-grid">
-                <div class="doc-item">
-                    <img src="https://via.placeholder.com/200" alt="Mjeku 1">
+                <div class="doc-item card parallax-card">
+                    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=faces&fit=crop&w=200&h=200" alt="Dr. Arben Kola">
                     <h3>Dr. Arben Kola</h3>
                     <p>Specialist Kardiolog</p>
                     <a href="#contact" class="btn primary small">Rezervo Vizitë</a>
                 </div>
-
-                <div class="doc-item">
-                    <img src="https://via.placeholder.com/200" alt="Mjeku 2">
+                <div class="doc-item card parallax-card">
+                    <img src="https://images.unsplash.com/photo-1588776814546-3d17c22c0e39?crop=faces&fit=crop&w=200&h=200" alt="Dr. Elira Dervishi">
                     <h3>Dr. Elira Dervishi</h3>
                     <p>Onkologe Klinike</p>
                     <a href="#contact" class="btn primary small">Rezervo Vizitë</a>
                 </div>
-
-                <div class="doc-item">
-                    <img src="https://via.placeholder.com/200" alt="Mjeku 3">
+                <div class="doc-item card parallax-card">
+                    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=faces&fit=crop&w=200&h=200" alt="Dr. Mentor Hoxha">
                     <h3>Dr. Mentor Hoxha</h3>
                     <p>Ortoped & Traumë</p>
                     <a href="#contact" class="btn primary small">Rezervo Vizitë</a>
@@ -132,12 +129,11 @@
         </div>
     </section>
 
-    
-    <section class="patients" id="patients">
+    <!-- PATIENTS -->
+    <section class="patients fade-up" id="patients">
         <div class="container">
             <h2>Për Pacientët</h2>
             <p>Informacione të rëndësishme për prenotime, siguracione shëndetësore dhe shërbimet që ofrojmë.</p>
-
             <ul class="patient-list">
                 <li>Si të kryeni prenotimin: plotësoni formularin dhe zgjidhni orarin e vizitës.</li>
                 <li>Dokumentet e nevojshme për vizitë.</li>
@@ -146,24 +142,19 @@
         </div>
     </section>
 
-    
-    <section class="contact" id="contact">
+    <!-- CONTACT -->
+    <section class="contact fade-up" id="contact">
         <div class="container">
             <h2>Kontakt</h2>
-
             <div class="contact-grid">
-
                 <div>
                     <h3>Adresa</h3>
                     <p>Rruga kryesore, Tiranë, Shqipëri</p>
-
                     <h3>Telefon</h3>
                     <p>+355 44 000 000</p>
-
                     <h3>Email</h3>
                     <p>info@spitaliamerikan.al</p>
                 </div>
-
                 <form class="contact-form">
                     <input type="text" placeholder="Emri" required>
                     <input type="email" placeholder="Email" required>
@@ -174,10 +165,10 @@
         </div>
     </section>
 
-    
     <footer>
         <p>© 2025 Spitali Amerikan. Të gjitha të drejtat e rezervuara.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
