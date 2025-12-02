@@ -92,7 +92,7 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Responsive */
+
 @media(max-width: 480px){
     .login-box {
         padding: 30px 20px;
