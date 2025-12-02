@@ -72,3 +72,12 @@ footer { background:#003B6F; color:white; text-align:center; padding:25px; }
     .about-grid, .dept-grid, .doc-grid, .contact-grid { grid-template-columns:1fr; }
 }
 .patient-list { margin-top:20px; list-style: disc; padding-left:25px; }
+.logo-link {
+    display: inline-block;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
